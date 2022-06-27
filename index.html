@@ -8,9 +8,87 @@
     <link rel="icon" href="./icons/earth.png" type="image/x-icon">
     <link rel="stylesheet" href="desktop.css">
     <link rel="stylesheet" href="mobile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    
+    <main>
+        <nav class="navigation">
+            <div class="hamburger">
+                <span class="ham"></span>
+                <span class="ham"></span>
+                <span class="ham"></span>
+            </div>
+            <ul class="menu">
+                <li class="menu-items">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="menu-items">
+                    <a href="#about">About</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="home" class="home-page">
+            <h1 class="h3 heading">"Hello! Mother Earth Enthusiasts"</h1>
+            <h2 class="h1 headline">Climate Change Global Summit 2022</h2>
+            <p class="summit-description">
+                This is a summit about the climate change crisis 
+                effects and why they matter, taking place in Mombasa, 
+                Kenya in November.
+            </p>
+            <p class="h1 container date-details">2022-11-21(Mon)~23(Wed)</p>
+            <small>@The Koblenz Hall Mombasa</small>
+        </section>
+        <section id="about" class="about-page container">
+            <h1 class="h2">Main Program</h1>
+            <div class="divider"></div>
+            <div class="activities container-fluid">
+                <ul class="activity-list list-unstyled col-12">
+                    <li class="activity">
+                      <img src="./icons/earth.png" alt="lecture icon">
+                      <span class="activity-name">Lecture</span>
+                      <span class="activity-description">
+                        Listen to the speakers from various countries about their take on climate change.
+                      </span>
+                    </li>
+                    <li class="activity">
+                      <img src="./icons/earth.png" alt="lecture icon">
+                      <span class="activity-name">Lecture</span>
+                      <span class="activity-description">
+                        Listen to the speakers from various countries about their take on climate change.
+                      </span>
+                    </li>
+                    <li class="activity">
+                        <img src="./icons/earth.png" alt="lecture icon">
+                        <span class="activity-name">Lecture</span>
+                        <span class="activity-description">
+                          Listen to the speakers from various countries about their take on climate change.
+                        </span>
+                    </li>
+                    <li class="activity">
+                        <img src="./icons/earth.png" alt="lecture icon">
+                        <span class="activity-name">Lecture</span>
+                        <span class="activity-description">
+                          Listen to the speakers from various countries about their take on climate change.
+                        </span>
+                    </li>
+                </ul>
+                <button class="container-fluid m-0 col-8">
+                    Join CC Global Summit 2022
+                </button>
+            </div>
+        </section>
+        <footer>
+            <div class="partners">
+                <h3 class="Partners">Partners</h3>
+                <div class="sub-divider"></div>
+            </div>
+            <div class="footer-info">
+                <a href="./icons/earth.png" id="footer-logo"></a>
+                <small>&#169;2022 Climate Change Organisation <br> All rights reseved</small>
+            </div>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="mobilescript.js"></script>
     <script src="desktopscript.js"></script>
 </body>
