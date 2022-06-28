@@ -35,17 +35,65 @@
 
   .menu {
     margin: 0;
+    position: fixed;
+    left: 0;
+    top: -100%;
+    width: 100vw;
+    height: 50%;
+    background-color: rgba(211,211,211,0.99);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: saturation;
+    padding-top: 7rem;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: rgba(236,82,66,1);
+    font-size: 4rem;
+  }
+
+  .hamburger {
+    z-index: 10;
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .ham {
+    background-color: rgb(106, 101, 101);
+    margin: 0.2rem;
+    width: 3.5rem;
+    height: 0.5rem;
+    border-radius: 1rem;
+  }
+
+  .hamburger.active .ham:nth-child(1) {
+    background-color: rgba(236,82,66,1);
+    transform: translateY(0.9rem) rotate(45deg);
+  }
+
+  .hamburger.active .ham:nth-child(2) {
+    visibility: hidden;
+  }
+
+  .hamburger.active .ham:nth-child(3) {
+    background-color: rgba(236,82,66,1);
+    transform: translateY(-0.9rem) rotate(-45deg);
   }
 
   .navigation {
-    background-image: url(./images/white.jpg);
     margin: 0;
-    background-size: cover;
   }
-
+  
   .headline {
     color: #ec5242;
     font-size: 3.5rem;
+    margin-top: 6rem;
     font-family: 'COCOGOOSE', sans-serif;
     background-image: url(./images/theme.png);
     background-repeat: repeat;
@@ -57,7 +105,7 @@
   .summit-description {
     font-size: 1.6rem;
     margin: 0.1rem;
-    background-color: #d3d3d3;
+    background-color: rgba(211,211,211,0.5);
     border: 2px solid #fff;
     padding: 1.5rem;
   }
