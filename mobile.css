@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
-    height: 70vh;
+    height: 100vh;
     margin: 0;
   }
 
@@ -49,7 +49,7 @@
     top: 0;
     left: -100%;
     width: 100vw;
-    height: 64vh;
+    height: 100vh;
     background-color: rgba(211, 211, 211, 0.99);
     background-repeat: no-repeat;
     background-size: cover;
@@ -107,14 +107,9 @@
 
   .headline {
     color: #ec5242;
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-top: 6rem;
     font-family: 'COCOGOOSE', sans-serif;
-    background-image: url(./images/theme.png);
-    background-size: contain;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
   .summit-description {
