@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300&display=swap');
-@import url('http://fonts.cdnfonts.com/css/cocogoose');
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
 
 @media screen and (max-width: 768px) {
   html {
@@ -107,7 +107,7 @@
 
   .headline {
     color: #ec5242;
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-top: 6rem;
     font-family: 'COCOGOOSE', sans-serif;
   }
