@@ -17,6 +17,7 @@
     padding: 0;
     font-size: 1.6rem;
     font-family: 'Lato', sans-serif;
+    color: #272a31;
     background-color: rgba(229, 229, 229, 0.5);
   }
 
@@ -28,7 +29,7 @@
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 3.2rem;
+    gap: 3.6rem;
     height: 100vh;
     margin: 0;
   }
@@ -46,6 +47,7 @@
   .menu {
     margin: 0;
     position: fixed;
+    z-index: 5;
     top: 0;
     left: -100%;
     width: 100vw;
@@ -121,9 +123,9 @@
   }
 
   .date-details {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-family: "COCOGOOSE", sans-serif;
-    color: rgba(0, 0, 0, 0.6);
+    color: #272a31;
     margin: 0.9rem;
   }
 
@@ -177,7 +179,7 @@
 
   .activity-description {
     width: 60%;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .activity-name {
