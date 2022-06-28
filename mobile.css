@@ -16,6 +16,7 @@
     margin: 0;
     padding: 0;
     font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
     background-color: rgba(229, 229, 229, 0.5);
   }
 
@@ -49,6 +50,7 @@
     background-image: url(./images/theme.png);
     background-repeat: repeat;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
@@ -109,19 +111,74 @@
   }
 
   .about-header,
-  .activity-description {
+  .activity-description,
+  .partners-header {
     color: #fff;
   }
 
   .activity-description {
     width: 60%;
     font-size: 1.3rem;
-    align-self: flex-end;
   }
 
   .activity-name {
     color: #ec5242;
+    font-size: 1.6rem;
+    width: 20%;
+  }
+
+  .subscribe-btn {
+    background-color: #ec5242;
+    border: 0;
+    color: #fff;
     font-size: 1.3rem;
-    margin-left: -1rem;
+  }
+
+  .partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 20rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+  }
+
+  .partners-header {
+    font-size: 2rem;
+  }
+
+  .partner-logos {
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    filter: grayscale(var(--value, 100%));
+    width: 70%;
+    margin: 0.5rem;
+  }
+
+  .partner-logos img {
+    width: 7rem;
+    height: 4rem;
+  }
+
+  .logo {
+    height: 6rem;
+    width: 6rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-info {
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    filter: grayscale(var(--value, 100%));
+  }
+
+  .footer-info small {
+    font-weight: 300;
   }
 }
