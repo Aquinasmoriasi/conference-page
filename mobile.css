@@ -12,6 +12,10 @@
     list-style: none;
   }
 
+  .desktop-menu {
+    display: none;
+  }
+
   body {
     margin: 0;
     padding: 0;

@@ -11,7 +11,7 @@
   ul {
     list-style: none;
   }
-
+  
   body {
     margin: 0;
     padding: 0;
@@ -22,6 +22,56 @@
 
   main {
     width: 100vw;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .top-nav {
+   position: fixed;
+   align-items: center;
+   background-color: #272a31;
+   height: 3rem;
+  }
+
+  .desktop-menu {
+    border: 2px solid red;
+    height: 8rem;
+    position: fixed;
+    top: 3rem;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .desktop-menu-links {
+    font-size: 1.6rem;
+  }
+
+  .desktop-menu-links a {
+    text-decoration: none;
+    color: #272a31;
+  }
+
+  #camp {
+    border: 3px solid #ec5242;
+    padding: 1rem;
+  }
+
+  #camp a {
+    color: #ec5242;
+  }
+
+  #nav-logo {
+    width: 7rem;
+    height: 7rem;
+    position: fixed;
+    left: 20%;
+    top: 3.71rem;
   }
 
   .home-page {
@@ -41,68 +91,6 @@
     z-index: -1;
     height: 100vh;
     width: 100vw;
-  }
-
-  .menu {
-    margin: 0;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100vw;
-    height: 64vh;
-    background-color: rgba(211, 211, 211, 0.99);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: saturation;
-    padding-top: 7rem;
-  }
-
-  .menu a {
-    width: 100%;
-    text-decoration: none;
-    color: rgba(236, 82, 66, 1);
-    font-size: 4rem;
-  }
-
-  .hamburger {
-    z-index: 10;
-    position: absolute;
-    left: 2rem;
-    top: 2rem;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-  }
-
-  .ham {
-    background-color: rgb(106, 101, 101);
-    margin: 0.2rem;
-    width: 3.5rem;
-    height: 0.5rem;
-    border-radius: 1rem;
-    -webkit-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
-  }
-
-  .hamburger.active .ham:nth-child(1) {
-    background-color: rgba(236, 82, 66, 1);
-    position: fixed;
-    transform: translateY(1rem) rotate(45deg);
-  }
-
-  .hamburger.active .ham:nth-child(2) {
-    visibility: hidden;
-  }
-
-  .hamburger.active .ham:nth-child(3) {
-    background-color: rgba(236, 82, 66, 1);
-    position: fixed;
-    transform: translateY(1rem) rotate(-45deg);
-  }
-
-  .navigation {
-    margin: 0;
   }
 
   .headline {
