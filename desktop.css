@@ -16,11 +16,235 @@
     margin: 0;
     padding: 0;
     font-size: 1.6rem;
-    background-color: blue;
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(229, 229, 229, 0.5);
   }
 
-  .heading,
+  main {
+    width: 100vw;
+  }
+
+  .home-page {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    height: 70vh;
+    margin: 0;
+  }
+
+  .bg img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .menu {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100vw;
+    height: 64vh;
+    background-color: rgba(211, 211, 211, 0.99);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: saturation;
+    padding-top: 7rem;
+  }
+
+  .menu a {
+    width: 100%;
+    text-decoration: none;
+    color: rgba(236, 82, 66, 1);
+    font-size: 4rem;
+  }
+
+  .hamburger {
+    z-index: 10;
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .ham {
+    background-color: rgb(106, 101, 101);
+    margin: 0.2rem;
+    width: 3.5rem;
+    height: 0.5rem;
+    border-radius: 1rem;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .hamburger.active .ham:nth-child(1) {
+    background-color: rgba(236, 82, 66, 1);
+    position: fixed;
+    transform: translateY(1rem) rotate(45deg);
+  }
+
+  .hamburger.active .ham:nth-child(2) {
+    visibility: hidden;
+  }
+
+  .hamburger.active .ham:nth-child(3) {
+    background-color: rgba(236, 82, 66, 1);
+    position: fixed;
+    transform: translateY(1rem) rotate(-45deg);
+  }
+
+  .navigation {
+    margin: 0;
+  }
+
   .headline {
-    color: blue;
+    color: #ec5242;
+    font-size: 3.5rem;
+    margin-top: 6rem;
+    font-family: 'COCOGOOSE', sans-serif;
+    background-image: url(./images/theme.png);
+    background-size: contain;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .summit-description {
+    font-size: 1.6rem;
+    margin: 0.1rem;
+    background-color: rgba(211, 211, 211, 0.5);
+    border: 2px solid #fff;
+    padding: 1.5rem;
+  }
+
+  .date-details {
+    font-size: 2rem;
+    font-family: "COCOGOOSE", sans-serif;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0.9rem;
+  }
+
+  .divider {
+    background-color: #ec5242;
+    width: 10%;
+    margin: auto;
+    height: 0.2rem;
+  }
+
+  .venue {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    margin-left: 1.8rem;
+    margin-top: -3.9rem;
+  }
+
+  /* about section */
+  .about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./images/dark.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem;
+  }
+
+  .activity-list {
+    padding: 0;
+  }
+
+  .activity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: rgba(211, 211, 211, 0.2);
+  }
+
+  .activity img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .about-header,
+  .activity-description,
+  .partners-header {
+    color: #fff;
+  }
+
+  .activity-description {
+    width: 60%;
+    font-size: 1.3rem;
+  }
+
+  .activity-name {
+    color: #ec5242;
+    font-size: 1.6rem;
+    width: 20%;
+  }
+
+  .subscribe-btn {
+    background-color: rgba(236, 82, 66, 0.8);
+    border: 0;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  .subscribe-btn:hover {
+    transform: scale(1.2);
+    background-color: rgba(236, 82, 66, 1);
+  }
+
+  .partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 20rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+  }
+
+  .partners-header {
+    font-size: 2rem;
+  }
+
+  .partner-logos {
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    filter: grayscale(var(--value, 100%));
+    width: 70%;
+    margin: 0.5rem;
+  }
+
+  .partner-logos img {
+    width: 7rem;
+    height: 5rem;
+  }
+
+  .logo {
+    height: 4rem;
+    width: 4rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-info {
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    filter: grayscale(var(--value, 100%));
   }
 }
