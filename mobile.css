@@ -26,21 +26,31 @@
 
   .home-page {
     padding: 2rem;
-    border: 1px solid red;
-    height: 40rem;
-    background-image: url(./images/white.jpg);
-    background-color: #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    height: 70vh;
     margin: 0;
+  }
+
+  .bg img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
   }
 
   .menu {
     margin: 0;
     position: fixed;
-    left: 0;
-    top: -100%;
+    top: 0;
+    left: -100%;
     width: 100vw;
-    height: 50%;
-    background-color: rgba(211,211,211,0.99);
+    height: 64vh;
+    background-color: rgba(211, 211, 211, 0.99);
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: saturation;
@@ -48,8 +58,9 @@
   }
 
   .menu a {
+    width: 100%;
     text-decoration: none;
-    color: rgba(236,82,66,1);
+    color: rgba(236, 82, 66, 1);
     font-size: 4rem;
   }
 
@@ -63,18 +74,21 @@
     flex-direction: column;
     cursor: pointer;
   }
-  
+
   .ham {
     background-color: rgb(106, 101, 101);
     margin: 0.2rem;
     width: 3.5rem;
     height: 0.5rem;
     border-radius: 1rem;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
 
   .hamburger.active .ham:nth-child(1) {
-    background-color: rgba(236,82,66,1);
-    transform: translateY(0.9rem) rotate(45deg);
+    background-color: rgba(236, 82, 66, 1);
+    position: fixed;
+    transform: translateY(1rem) rotate(45deg);
   }
 
   .hamburger.active .ham:nth-child(2) {
@@ -82,30 +96,31 @@
   }
 
   .hamburger.active .ham:nth-child(3) {
-    background-color: rgba(236,82,66,1);
-    transform: translateY(-0.9rem) rotate(-45deg);
+    background-color: rgba(236, 82, 66, 1);
+    position: fixed;
+    transform: translateY(1rem) rotate(-45deg);
   }
 
   .navigation {
     margin: 0;
   }
-  
+
   .headline {
     color: #ec5242;
     font-size: 3.5rem;
     margin-top: 6rem;
     font-family: 'COCOGOOSE', sans-serif;
     background-image: url(./images/theme.png);
+    background-size: contain;
     background-repeat: repeat;
     -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .summit-description {
     font-size: 1.6rem;
     margin: 0.1rem;
-    background-color: rgba(211,211,211,0.5);
+    background-color: rgba(211, 211, 211, 0.5);
     border: 2px solid #fff;
     padding: 1.5rem;
   }
@@ -115,7 +130,7 @@
     font-family: "COCOGOOSE", sans-serif;
     color: rgba(0, 0, 0, 0.6);
     margin: 0.9rem;
-    }
+  }
 
   .divider {
     background-color: #ec5242;
@@ -126,8 +141,9 @@
 
   .venue {
     font-family: 'Lato', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-left: 1.8rem;
+    margin-top: -3.9rem;
   }
 
   /* about section */
@@ -148,9 +164,10 @@
   .activity {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     margin: 1rem 0;
-    background-color: rgba(211,211,211,0.2);
+    background-color: rgba(211, 211, 211, 0.2);
   }
 
   .activity img {
@@ -207,12 +224,12 @@
 
   .partner-logos img {
     width: 7rem;
-    height: 4rem;
+    height: 5rem;
   }
 
   .logo {
-    height: 6rem;
-    width: 6rem;
+    height: 4rem;
+    width: 4rem;
     margin: 0;
     padding: 0;
   }
@@ -224,9 +241,5 @@
     justify-content: space-around;
     padding: 3rem;
     filter: grayscale(var(--value, 100%));
-  }
-
-  .footer-info small {
-    font-weight: 300;
   }
 }
