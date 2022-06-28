@@ -193,10 +193,15 @@
   }
 
   .subscribe-btn {
-    background-color: #ec5242;
+    background-color: rgba(236, 82, 66, 0.8);
     border: 0;
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+  }
+
+  .subscribe-btn:hover {
+    transform: scale(1.2);
+    background-color: rgba(236, 82, 66, 1);
   }
 
   .partners {
