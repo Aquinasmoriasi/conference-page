@@ -12,7 +12,8 @@
     list-style: none;
   }
 
-  .desktop-menu {
+  .desktop-menu,
+  #dt-btn {
     display: none;
   }
 
@@ -196,6 +197,11 @@
     border: 0;
     color: #fff;
     font-size: 1.5rem;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.8rem;
   }
 
   .subscribe-btn:hover {
