@@ -13,6 +13,7 @@
   }
 
   .desktop-menu,
+  .top-nav,
   #dt-btn {
     display: none;
   }
@@ -56,10 +57,10 @@
     left: -100%;
     width: 100vw;
     height: 100vh;
+    z-index: 5;
     background-color: rgba(211, 211, 211, 0.99);
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: saturation;
     padding-top: 7rem;
   }
 

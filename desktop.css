@@ -22,6 +22,7 @@
 
   main {
     width: 100vw;
+    overflow-x: hidden;
   }
 
   .hamburger,
@@ -31,33 +32,55 @@
   }
 
   .top-nav {
-   position: fixed;
+    width: 100vw;
+  }
+
+  .nav-before {
+    position: fixed;
+    left: 0;
+   display: flex;
+   justify-content: center;
+   gap: 5rem;
    align-items: center;
    background-color: #272a31;
    height: 3rem;
   }
 
+  .nav-before li:nth-of-type(1) {
+    padding-left: 41rem;
+  }
+   .nav-before a {
+    text-decoration: none; 
+    color: #fff;
+    font-size: 1rem;
+  }
   .desktop-menu {
-    border: 2px solid red;
+    background-color: #fff;
+  }
+  .desktop-menu-links {
+    left: 0;
+    background-color: rgba(255,255,255,1);
+    width: 100vw;
     height: 8rem;
     position: fixed;
     top: 3rem;
-    align-items: center;
-    padding: 1rem;
-  }
-
-  .desktop-menu-links {
-    font-size: 1.6rem;
   }
 
   .desktop-menu-links a {
     text-decoration: none;
+    font-size: 1.5rem;
     color: #272a31;
+  }
+
+  .desktop-menu-links a:hover {
+    color: #ec5242;
+    font-size: 1.52rem;
   }
 
   #camp {
     border: 3px solid #ec5242;
     padding: 1rem;
+    cursor: pointer;
   }
 
   #camp a {
@@ -67,15 +90,16 @@
   #nav-logo {
     width: 7rem;
     height: 7rem;
-    position: fixed;
-    left: 20%;
-    top: 3.71rem;
+    margin-right: 14rem;
   }
 
   .home-page {
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    background-image: url(./images/white-dt.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     gap: 3.2rem;
     height: 100vh;
     margin: 0;
@@ -85,7 +109,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    opacity: 0.3;
+    opacity: 0.2;
     z-index: -1;
     height: 100vh;
     width: 100vw;
@@ -140,25 +164,40 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 3rem;
-    height: 100vh;
+    height: 70vh;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column;
   }
 
   .activity-list {
-    padding: 0;
+    padding: 0 20rem;
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
   }
 
   .activity {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    padding: 1rem;
-    margin: 1rem 0;
+    padding: 2rem 0;
+    margin: 0 0.2rem;
     background-color: rgba(211, 211, 211, 0.2);
+    height: 25rem;
+    width: 25%;
+  }
+
+  .activity:hover {
+    border: 2px solid #fff;
   }
 
   .activity img {
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
   }
 
   .about-header,
@@ -168,20 +207,22 @@
   }
 
   .activity-description {
-    width: 60%;
-    font-size: 1.3rem;
+    width: auto;
+    font-size: 1.5rem;
+    padding: 0 1.3rem;
+    height: 8rem;
   }
 
   .activity-name {
     color: #ec5242;
-    font-size: 1.6rem;
-    width: 20%;
+    font-size: 2rem;
+    width: auto;
+    height: 4rem;
   }
 
-  #dt-btn {
-    border: 0;
+  #dt-btn a {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .partners {
@@ -208,8 +249,8 @@
   }
 
   .partner-logos img {
-    width: 7rem;
-    height: 5rem;
+    width: 12rem;
+    height: 9rem;
   }
 
   .logo {
