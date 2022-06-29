@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Climate Change Conference</title>
-    <link rel="icon" href="./icons/activity2.png" type="image/x-icon">
+    <link rel="icon" href="./icons/title.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="desktop.css">
     <link rel="stylesheet" href="mobile.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -32,24 +33,68 @@
                     <a href="#">Contact</a>
                 </li>
             </ul>
+            <div class="desktop-menu bg-light justify-content-center container-fluid">
+                <ul class="nav-before container-fluid">
+                    <li>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                    </li>
+                    <li class="nav-icons">
+                        <a href="#" id="lang">English</a>
+                    </li>
+                    <li class="nav-icons">
+                        <a href="#">My Page</a>
+                    </li>
+                    <li class="nav-icons">
+                        <a href="#">Logout</a>
+                    </li>
+                </ul>
+                <ul class="desktop-menu-links container-fluid d-flex justify-content-center align-items-center gap-5">
+                    <li>
+                        <a href="#home">
+                         <img src="./icons/logo.png" id="nav-logo" alt="cc logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Program</a>
+                    </li>
+                    <li>
+                        <a href="#">Join</a>
+                    </li>
+                    <li>
+                        <a href="#">Sponsor</a>
+                    </li>
+                    <li>
+                        <a href="#">News</a>
+                    </li>
+                    <li id="camp">
+                        <a href="#">CC Campaign</a>
+                    </li>
+                </ul>
+            
+            </div>
         </nav>
         <section id="home" class="home-page">
-            <h1 class="headline">Climate Change <br>Global Summit <br> 2022</h1>
+            <small id="intro" class="fs-1">Welcome to this year's</small>
+            <h1 class="headline">CLIMATE CHANGE<br>GLOBAL SUMMIT <br> 2022</h1>
             <p class="summit-description">
                 This is a 3-day summit about the climate change crisis 
                 effects and why they matter. It will take place in Mombasa, 
                 Kenya in November.
             </p>
-            <p class="container-fluid date-details">Mon, 21<sup>st</sup> November 2022</p>
+            <p class="date-details">Mon, 21<sup>st</sup> November 2022</p>
             <small class="venue">@The Koblenz Hall Mombasa</small>
-            <div class="bg">
-                <img src="./images/white.jpg" alt="">
-            </div>
+            <div class="bg"></div>
         </section>
         <section id="about" class="about-page container-fluid">
             <h2 class="about-header">Main Program</h2>
             <div class="divider"></div>
-            <div class="activities container-fluid">
+            <div class="activities container-fluid d-flex flex-column align-items-center justify-content-center">
                 <ul class="activity-list col-12">
                     <li class="activity">
                       <img src="./icons/activity1.png" alt="">
@@ -62,7 +107,7 @@
                       <img src="./icons/exhibit.jpg" alt="">
                       <span class="activity-name">Exhibition</span>
                       <span class="activity-description">
-                        Listen to the speakers from various countries about their take on climate change.
+                        Check out a gallery about the devastating effectsof climate change around the world.
                       </span>
                     </li>
                     <li class="activity">
@@ -80,9 +125,10 @@
                         </span>
                     </li>
                 </ul>
-                <button type="button" class="container-fluid d-flex justify-content-center p-4 col-10 subscribe-btn">
+                <button type="button" id="sub-btn" class="subscribe-btn">
                     Join CC Global Summit 2022
                 </button>
+                <small id="dt-btn"><a href="#">SEE THE WHOLE PROGRAM</a></small>
             </div>
         </section>
     </main>
@@ -95,7 +141,7 @@
                 <img src="icons/bmfoun.png" alt="">
                 <img src="icons/unep.jpg" alt="">
             </div>
-            <div class="partner-logos">
+            <div class="partner-logos1">
                 <img src="icons/un.png" alt="">
                 <img src="icons/green.jpg" alt="">
             </div>

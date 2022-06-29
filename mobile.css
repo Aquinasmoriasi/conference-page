@@ -12,6 +12,12 @@
     list-style: none;
   }
 
+  .desktop-menu,
+  .top-nav,
+  #dt-btn {
+    display: none;
+  }
+
   body {
     margin: 0;
     padding: 0;
@@ -32,30 +38,39 @@
     gap: 3.6rem;
     height: 100vh;
     margin: 0;
+    background-image: url(./images/dry-mb.webp);
+    background-size: cover;
+    background-color: #d3d3d3;
   }
 
-  .bg img {
+  .bg {
     position: absolute;
     left: 0;
     top: 0;
-    opacity: 0.3;
-    z-index: -1;
+    opacity: 0.97;
     height: 100vh;
     width: 100vw;
+    background-color: #d3d3d3;
+  }
+
+  #intro {
+    position: absolute;
+    z-index: 1;
+    top: 14vh;
+    color: #ec5242;
   }
 
   .menu {
     margin: 0;
     position: fixed;
-    z-index: 5;
     top: 0;
     left: -100%;
     width: 100vw;
     height: 100vh;
+    z-index: 5;
     background-color: rgba(211, 211, 211, 0.99);
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: saturation;
     padding-top: 7rem;
   }
 
@@ -110,16 +125,25 @@
   .headline {
     color: #ec5242;
     font-size: 3rem;
-    margin-top: 6rem;
+    margin-top: 13rem;
+    display: flex;
+    flex-direction: column;
     font-family: 'COCOGOOSE', sans-serif;
+    z-index: 1;
+    background-image: url(./images/theme.png);
+    background-size: contain;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .summit-description {
     font-size: 1.6rem;
     margin: 0.1rem;
-    background-color: rgba(211, 211, 211, 0.5);
-    border: 2px solid #fff;
+    background-color: #d3d3d3;
+    border: 2px ridge #fff;
     padding: 1.5rem;
+    z-index: 1;
   }
 
   .date-details {
@@ -139,7 +163,9 @@
   .venue {
     font-family: 'Lato', sans-serif;
     font-size: 1.4rem;
-    margin-left: 1.8rem;
+    z-index: 1;
+    width: 100%;
+    padding: 0;
   }
 
   /* about section */
@@ -193,11 +219,16 @@
     border: 0;
     color: #fff;
     font-size: 1.5rem;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.8rem;
   }
 
   .subscribe-btn:hover {
-    transform: scale(1.2);
     background-color: rgba(236, 82, 66, 1);
+    transform: scale(1.2);
   }
 
   .partners {
