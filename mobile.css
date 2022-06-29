@@ -206,8 +206,8 @@
   }
 
   .subscribe-btn:hover {
-    transform: scale(1.2);
     background-color: rgba(236, 82, 66, 1);
+    transform: scale(1.2);
   }
 
   .partners {
