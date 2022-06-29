@@ -144,7 +144,7 @@
     font-size: 1.6rem;
     margin-right: 26vw;
     width: 40%;
-    border: 2.5px solid #fff;
+    border: 2.5px ridge #fff;
     padding: 1.2rem;
     z-index: 5;
   }
@@ -156,13 +156,12 @@
     z-index: 5;
     align-self: flex-start;
     margin-left: 21.7rem;
-    border: 1px solid red;
   }
 
   .divider {
     background-color: #ec5242;
     width: 3%;
-    margin: auto;
+    margin-bottom: auto;
     height: 0.2rem;
   }
 
