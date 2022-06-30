@@ -181,7 +181,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 3rem;
-    height: 70vh;
+    height: auto;
   }
 
   #about {
@@ -247,60 +247,55 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 20rem;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 2rem;
+    padding: 5rem;
   }
 
   .partners-header {
     font-size: 2rem;
   }
 
-  .partner-logos {
-    height: 5rem;
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    gap: 25rem;
-    filter: grayscale(var(--value, 100%));
-    width: 70%;
-    margin: 0.5rem;
+  #img-separator {
+    display: none;
   }
 
-  .partner-logos1 {
-    height: 5rem;
+  .partner-logos {
+    height: auto;
     display: flex;
-    position: absolute;
-    align-self: flex-end;
-    justify-content: space-around;
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: center;
     filter: grayscale(var(--value, 100%));
-    width: 70%;
-    margin: 0.5rem;
+    width: 80%;
+    gap: 2rem;
   }
 
   .partner-logos img {
     width: 12rem;
     height: 9rem;
-  }
-
-  .partner-logos1 img {
-    width: 12rem;
-    height: 9rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
 
   .logo {
-    height: 4rem;
-    width: 4rem;
+    height: 10rem;
+    width: 10rem;
     margin: 0;
-    padding: 0;
   }
 
   .footer-info {
     height: auto;
     background-color: #fff;
     display: flex;
-    justify-content: space-around;
-    padding: 3rem;
+    justify-content: flex-start;
+    gap: 5rem;
+    padding: 4rem;
     filter: grayscale(var(--value, 100%));
+    margin-left: 28vw;
+  }
+  .footer-info small {
+    font-size: 1.3rem;
+    margin-top: 1.4rem;
   }
 }

@@ -274,4 +274,13 @@
     padding: 3rem;
     filter: grayscale(var(--value, 100%));
   }
+
+  .name {
+    font-size: 12px;
+    color: #ec5242;
+  }
+
+  #speakers {
+    display: flex;
+  }
 }
