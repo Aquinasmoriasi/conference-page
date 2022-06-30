@@ -70,7 +70,13 @@ const speakers = [
   }
 ];
 
+const h4 = document.createElement('h4');
+h4.setAttribute('id','speaker-title');
+const div2 = document.createElement('div');
+div2.setAttribute('id','div2');
+h4.innerHTML = 'Featured Speakers';
 const section = document.createElement('section');
+section.append(h4,div2)
 section.setAttribute('id', 'speakers');
 const main = document.querySelector('main');
 
