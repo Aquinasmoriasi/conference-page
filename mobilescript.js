@@ -32,23 +32,24 @@ menuItem.forEach((a) => {
 /*speakers section*/
 
 
-const greta = {
-  name: `Greta Thurnberg`,
-  occupation: `World acclaimed environmental activist`,
-  image: `src="./images/greta.jpg/" alt="Greta Thurnberg"`,
-  ideoligies: `She is known for challenging world leaders to take immediate action for climate change mitigation.`
-};
+const speakers = [
+  {
+    name: `Greta Thurnberg`,
+    occupation: `World acclaimed environmental activist`,
+    image: `src="./images/greta.jpg/" alt="Greta Thurnberg"`,
+    ideoligies: `She is known for challenging world leaders to take immediate action for climate change mitigation.`
+  }
+];
 
 const main = document.querySelector('main');
 let section = document.createElement('section');
 section.setAttribute('id', 'speakers')
 let h3 = document.querySelector('h3');
-h3.innerHTML = greta.name;
+h3.innerHTML = speaker[0].name;
 h3.setAttribute('class','name');
 section.append(h3);
 let p = document.createElement('p');
-p.innerHTML = greta.occupation;
+p.innerHTML = speaker[0].occupation;
 p.setAttribute('class','occupation');
 section.append(p);
 main.append(section)
-
