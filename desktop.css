@@ -144,7 +144,7 @@
     font-size: 1.6rem;
     margin-right: 26vw;
     width: 40%;
-    border: 2.5px ridge #fff;
+    border: 2.5px solid rgba(255,255,255, 0.2);
     padding: 1.2rem;
     z-index: 5;
   }
@@ -190,10 +190,10 @@
   }
 
   .activity-list {
-    padding: 0 20rem;
+    padding: 0 10vw;
     display: flex;
     justify-content: center;
-    margin: 5rem;
+    margin: 1vw;
   }
 
   .activity {
@@ -204,7 +204,7 @@
     padding: 2rem 0;
     margin: 0 0.2rem;
     background-color: rgba(211, 211, 211, 0.2);
-    height: 25rem;
+    height: 21rem;
     width: 25%;
   }
 
@@ -224,9 +224,12 @@
   }
 
   .activity-description {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
     width: auto;
-    font-size: 1.5rem;
-    padding: 0 1.3rem;
+    font-size: 1.3rem;
+    padding: 0 0.8rem;
     height: 8rem;
   }
 
