@@ -284,15 +284,30 @@
 
   #speakers {
     display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: #fff;
     width: 100vw;
+    align-items: center;
     height: auto;
     flex-wrap: wrap;
+  }
+
+  .speaker-div {
+    display: grid;
+    grid-template-columns: 0.65fr 2fr;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 3rem 3rem;
+    border: 3px solid blue;
   }
 
   #speakers img {
     height: 10rem;
     width: 10rem;
+    align-self: flex-start;
+    float: left;
   }
 
   .speaker-details {
@@ -312,10 +327,11 @@
   .occupation {
     color: #ec5242;
     font-style: italic;
+    font-size: 1.2rem;
   }
 
   #div2 {
-    width: 3%;
+    width: 11%;
     height: 0.2rem;
     background-color: #ec5242;
   }
@@ -323,5 +339,16 @@
   #speaker-title {
     font-weight: bold;
     font-size: 2rem;
+    padding-top: 2rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+  }
+
+  #more-btn {
+    height: 5rem;
+    background-color: red;
+    width: 100%;
   }
 }
