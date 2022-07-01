@@ -67,38 +67,38 @@ const speakers = [
     picture: './images/awer.png',
     occupation: 'Director of the WWF foundation Kenya',
     description: 'He is reknown for his tough stance on matters environment',
-  }
+  },
 ];
 
 const h4 = document.createElement('h4');
-h4.setAttribute('id','speaker-title');
+h4.setAttribute('id', 'speaker-title');
 const div2 = document.createElement('div');
-div2.setAttribute('id','div2');
+div2.setAttribute('id', 'div2');
 h4.innerHTML = 'Featured Speakers';
 const section = document.createElement('section');
-section.append(h4,div2)
+section.append(h4, div2);
 section.setAttribute('id', 'speakers');
 const main = document.querySelector('main');
 
-for (let i in speakers) {
-const h3 = document.createElement('h3');
-h3.setAttribute('class', 'name');
-h3.innerHTML += speakers[i].name;
-const p = document.createElement('p');
-p.setAttribute('class', 'occupation');
-p.innerHTML += speakers[i].occupation;
-const img = document.createElement('img');
-img.setAttribute('src', speakers[i].picture);
-img.setAttribute('alt', speakers[i].picture);
-const p1 = document.createElement('p');
-p1.setAttribute('class', 'description');
-p1.innerHTML = speakers[i].description;
-const span = document.createElement('span');
-span.setAttribute('id', 'div1');
+for (let i = 0; i <= speakers.length; i += 1) {
+  const h3 = document.createElement('h3');
+  h3.setAttribute('class', 'name');
+  h3.innerHTML += speakers[i].name;
+  const p = document.createElement('p');
+  p.setAttribute('class', 'occupation');
+  p.innerHTML += speakers[i].occupation;
+  const img = document.createElement('img');
+  img.setAttribute('src', speakers[i].picture);
+  img.setAttribute('alt', speakers[i].picture);
+  const p1 = document.createElement('p');
+  p1.setAttribute('class', 'description');
+  p1.innerHTML = speakers[i].description;
+  const span = document.createElement('span');
+  span.setAttribute('id', 'div1');
 
-const div = document.createElement('div');
-div.setAttribute('class', 'speaker-details');
-div.append(h3, p, span, p1);
-section.append(img, div);
-main.append(section);
+  const div = document.createElement('div');
+  div.setAttribute('class', 'speaker-details');
+  div.append(h3, p, span, p1);
+  section.append(img, div);
+  main.append(section);
 }
