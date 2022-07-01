@@ -285,9 +285,7 @@
     background-color: #fff;
     width: 100vw;
     height: auto;
-    gap: 1rem;
     flex-wrap: wrap;
-    padding: 2rem;
   }
 
   #speakers img {
@@ -298,9 +296,8 @@
   .speaker-details {
     display: flex;
     flex-direction: column;
+    align-self: flex-end;
     justify-content: center;
-    width: 60%;
-    padding: 1.0rem;
   }
 
   #div1 {
@@ -312,5 +309,16 @@
   .occupation {
     color: #ec5242;
     font-style: italic;
+  }
+  
+  #div2 {
+    width: 3%;
+    height: 0.2rem;
+    background-color: #ec5242;
+  }
+
+  #speaker-title {
+    font-weight: bold;
+    font-size: 2rem;
   }
 }
