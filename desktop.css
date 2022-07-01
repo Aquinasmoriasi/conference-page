@@ -309,19 +309,29 @@
   .name {
     font-size: 1.6rem;
     font-weight: bold;
-    padding-top: 1.05rem;
+    padding-top: 0.9rem;
   }
 
   #speakers {
-    padding-top: 14vh;
-    display: grid;
-    grid-template-columns: 13% 23% 13% 23%;
+    padding: 14vh;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: start;
+    flex-wrap: wrap;
+    align-items: center;
     background-color: #fff;
     padding-left: 8vw;
     margin: auto;
-    height: 100vh;
+    height: auto;
+  }
+
+  .speaker-div {
+    display: grid;
+    grid-template-columns: 0.6fr 1.3fr 0.6fr 1.3fr;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 4rem;
   }
 
   #speakers img {
@@ -333,6 +343,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
   }
 
   #div1 {
@@ -352,15 +363,16 @@
     height: 0.2rem;
     background-color: #ec5242;
     position: absolute;
-    left: 48%;
-    margin-top: -2rem;
+    left: 47.2%;
+    margin-bottom: 41rem;
   }
 
   #speaker-title {
     font-weight: bold;
-    position: absolute;
     font-size: 2rem;
-    left: 43%;
-    margin-top: -5rem;
+    align-self: center;
+    position: absolute;
+    left: 42%;
+    margin-bottom: 45rem;
   }
 }

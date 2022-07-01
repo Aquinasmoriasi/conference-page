@@ -75,10 +75,13 @@ h4.setAttribute('id', 'speaker-title');
 const div2 = document.createElement('div');
 div2.setAttribute('id', 'div2');
 h4.innerHTML = 'Featured Speakers';
+const containerDiv = document.createElement('div');
+containerDiv.setAttribute('class', 'speaker-div');
+containerDiv.append(h4,div2);
 const section = document.createElement('section');
-section.append(h4, div2);
 section.setAttribute('id', 'speakers');
 const main = document.querySelector('main');
+
 
 for (let i = 0; i <= speakers.length; i += 1) {
   const h3 = document.createElement('h3');
@@ -99,6 +102,7 @@ for (let i = 0; i <= speakers.length; i += 1) {
   const div = document.createElement('div');
   div.setAttribute('class', 'speaker-details');
   div.append(h3, p, span, p1);
-  section.append(img, div);
+  containerDiv.append(img,div);
+  section.append(containerDiv);
   main.append(section);
 }
