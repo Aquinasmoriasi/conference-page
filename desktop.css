@@ -113,7 +113,7 @@
     justify-content: center;
     align-items: center;
     background-image: url(./images/dry.jpg);
-    background-size: cover;
+    background-size: 25%;
     background-repeat: repeat;
     height: 120vh;
   }
