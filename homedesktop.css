@@ -325,15 +325,21 @@
   }
 
   #speakers {
-    padding: 14vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
+    justify-content: flex-start;
     background-color: #fff;
-    padding-left: 8vw;
     margin: auto;
+    height: auto;
+    padding: 5rem;
+  }
+
+  #speaker-container {
+    display: grid;
+    grid-template-columns: 0.9fr 2fr 0.9fr 2fr;
+    width: 80%;
+    padding: 3rem;
     height: auto;
   }
 
@@ -356,6 +362,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    font-size: 1.3rem;
+  }
+
+  #divider3 {
+    width: 3%;
+    background-color: #ec5242;
+    margin-bottom: auto;
+    height: 0.2rem;
   }
 
   #div1 {
@@ -368,6 +382,11 @@
   .occupation {
     color: #ec5242;
     font-style: italic;
+    font-size: 1.3rem;
+  }
+
+  #about-header1 {
+    color: #272a31;
   }
 
   #div2 {
@@ -376,15 +395,11 @@
     background-color: #ec5242;
     position: absolute;
     left: 47.2%;
-    margin-bottom: 41rem;
   }
 
   #speaker-title {
     font-weight: bold;
     font-size: 2rem;
     align-self: center;
-    position: absolute;
-    left: 42%;
-    margin-bottom: 45rem;
   }
 }
