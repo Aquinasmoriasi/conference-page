@@ -15,7 +15,7 @@
 - Frameworks
   - Bootstrap 5
 - Technologies
-    - Linters
+  - Linters
 
 ## Live Demo (if available)
 
@@ -24,56 +24,51 @@
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
+- Visual Studio
+- Browser
+- Github
 
 ### Setup
-
+- copy this link `https://github.com/Aquinasmoriasi/First-Capstone-Project.git`.
+- get the directory that you want to clone the repository.
+- open the command prompt in this directory.
+- write `git clone https://github.com/Aquinasmoriasi/First-Capstone-Project.git`.
+- go to the repository folder in your command prompt and open `index.html` file
 ### Install
-
+- write `git clone https://github.com/Aquinasmoriasi/First-Capstone-Project.git`.
+- go to the repository folder in your command prompt and open `index.html` file
 ### Usage
-
+- By clicking on 'Go live' in VS studio, you can be able to see this project in action.
+- You can also access this open source website in the aboue provided demo link
 ### Run tests
-
+- You can navigate to different parts of the page from the navigation bar and you can also inspect using the available browser tools to se how the webpages were built.
 ### Deployment
-
-
+- The project is deployed at [https://github.com/Aquinasmoriasi/First-Capstone-Project](https://github.com/Aquinasmoriasi/First-Capstone-Project)
 
 ## Authors
 
-👤 **Author1**
+👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [Aquinas Moriasi](https://github.com/Aquinasmoriasi)
+- Twitter: [@Aquinas747](twitter.com/aquinas747)
+- LinkedIn: [Aquinas Moriasi](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Aquinasmoriasi/First-Capstone-Project)/issues/).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- The original template design was by [Cindy Shin](https://www.behance.net/adagio07)
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./LICENSE) licensed.
