@@ -60,7 +60,7 @@ To get a local copy up and running follow these simple steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Aquinasmoriasi/First-Capstone-Project)/issues/).
+Feel free to check the [issues page](https://github.com/Aquinasmoriasi/First-Capstone-Project).
 
 ## Show your support
 
