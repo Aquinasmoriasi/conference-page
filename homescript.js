@@ -70,38 +70,38 @@ const speakers = [
   },
 ];
 
-const h4 = document.createElement('h4');
-h4.setAttribute('id', 'speaker-title');
-const div2 = document.createElement('div');
-div2.setAttribute('id', 'div2');
-h4.innerHTML = 'Featured Speakers';
-const containerDiv = document.createElement('div');
-containerDiv.setAttribute('class', 'speaker-div');
-containerDiv.append(h4, div2);
 const section = document.createElement('section');
 section.setAttribute('id', 'speakers');
 const main = document.querySelector('main');
+const divContainer = document.createElement('div');
+divContainer.setAttribute('id', 'speaker-container')
+const spkHeader = document.createElement('h2');
+spkHeader.setAttribute('id', 'about-header1');
+spkHeader.innerHTML = 'Featured Speakers';
+const span1 = document.createElement('span');
+span1.setAttribute('id', 'divider3');
 
-for (let i = 0; i <= speakers.length; i += 1) {
-  const h3 = document.createElement('h3');
-  h3.setAttribute('class', 'name');
-  h3.innerHTML += speakers[i].name;
-  const p = document.createElement('p');
-  p.setAttribute('class', 'occupation');
-  p.innerHTML += speakers[i].occupation;
-  const img = document.createElement('img');
-  img.setAttribute('src', speakers[i].picture);
-  img.setAttribute('alt', speakers[i].picture);
-  const p1 = document.createElement('p');
-  p1.setAttribute('class', 'description');
-  p1.innerHTML = speakers[i].description;
-  const span = document.createElement('span');
-  span.setAttribute('id', 'div1');
 
-  const div = document.createElement('div');
-  div.setAttribute('class', 'speaker-details');
-  div.append(h3, p, span, p1);
-  containerDiv.append(img, div);
-  section.append(containerDiv);
-  main.append(section);
+for (let i in speakers) {
+const h3 = document.createElement('h3');
+h3.setAttribute('class', 'name');
+h3.innerHTML += speakers[i].name;
+const p = document.createElement('p');
+p.setAttribute('class', 'occupation');
+p.innerHTML += speakers[i].occupation;
+const img = document.createElement('img');
+img.setAttribute('src', speakers[i].picture);
+img.setAttribute('alt', speakers[i].picture);
+const p1 = document.createElement('p');
+p1.setAttribute('class', 'description');
+p1.innerHTML = speakers[i].description;
+const span = document.createElement('span');
+span.setAttribute('id', 'div1');
+
+const div = document.createElement('div');
+div.setAttribute('class', 'speaker-details');
+div.append(h3, p, span, p1);
+divContainer.append(img,div)
+section.append(spkHeader, span1, divContainer);
+main.append(section);
 }

@@ -256,7 +256,7 @@
   }
 
   #lg {
-    width: 45rem;
+    width: auto;
     height: 18rem;
     border: 2px solid rgba(211, 211, 211, 0.2);
     display: flex;
@@ -265,7 +265,7 @@
   }
 
   #lg img {
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: 20rem;
   }
 }

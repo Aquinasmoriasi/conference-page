@@ -259,7 +259,7 @@
     filter: grayscale(var(--value, 100%));
     flex-wrap: wrap;
     gap: 1.1rem;
-    padding: 0.9rem;
+    margin: 0.9rem;
   }
 
   .partner-logos img {
@@ -284,6 +284,7 @@
 
   /* speakers */
 
+
   .name {
     font-size: 1.6rem;
     font-weight: bold;
@@ -291,12 +292,21 @@
 
   #speakers {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #fff;
     width: 100vw;
     height: auto;
-    gap: 1rem;
-    flex-wrap: wrap;
-    padding: 2rem;
+    padding: 2rem 0;
+  }
+
+  #speaker-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    padding: 2.4rem 2.4rem;
+    height: auto;
   }
 
   #speakers img {
@@ -308,8 +318,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
+    width: auto;
     padding: 1rem;
+  }
+
+  #divider3 {
+    width: 8%;
+    background-color: #ec5242;
+    margin-bottom: auto;
+    height: 0.2rem;
   }
 
   #div1 {

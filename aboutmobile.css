@@ -200,11 +200,12 @@
   .logo-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
     align-items: center;
     width: 100vw;
     padding: 2.4rem 2.4rem;
-    height: 40rem;
+    height: auto;
     margin: auto;
     border-top: 2px solid rgba(211, 211, 211, 0.2);
   }
@@ -212,7 +213,7 @@
   .logo {
     height: 9rem;
     width: 9rem;
-    padding: 0;
+    padding: 1rem;
   }
 
   .logo-section img {
@@ -235,6 +236,8 @@
     align-items: center;
     margin: auto;
     flex-wrap: wrap;
+    text-align: center;
+    padding: 1rem;
   }
 
   .footer-info {
