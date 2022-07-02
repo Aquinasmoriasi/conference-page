@@ -56,12 +56,6 @@
     background-color: #d3d3d3;
   }
 
-  #intro {
-    position: absolute;
-    z-index: 1;
-    top: 14vh;
-    color: #ec5242;
-  }
 
   .menu {
     margin: 0;
@@ -137,6 +131,13 @@
     background-repeat: repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  
+  #intro {
+    z-index: 1;
+    font-size: 1.6rem;
+    -webkit-text-fill-color: #ec5242;
   }
 
   .summit-description {
