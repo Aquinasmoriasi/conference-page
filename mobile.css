@@ -56,12 +56,11 @@
     background-color: #d3d3d3;
   }
 
-
   .menu {
     margin: 0;
     position: fixed;
     top: 0;
-    left: -100%;
+    left: -500%;
     width: 100vw;
     height: 100vh;
     z-index: 5;
@@ -133,7 +132,6 @@
     -webkit-text-fill-color: transparent;
   }
 
-  
   #intro {
     z-index: 1;
     font-size: 1.6rem;
