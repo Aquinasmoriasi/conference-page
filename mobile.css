@@ -143,7 +143,7 @@
     font-size: 1.6rem;
     margin: 0.1rem;
     background-color: rgb(249, 249, 249);
-    border: 3px solid rgba(255,255,255, 1);
+    border: 3px solid rgba(255, 255, 255, 1);
     padding: 1.5rem;
     z-index: 1;
   }
@@ -247,11 +247,13 @@
   .partners-header {
     font-size: 2rem;
   }
+
   #img-separator {
     display: block;
   }
+
   .partner-logos {
-    height:  auto;
+    height: auto;
     display: flex;
     justify-content: center;
     filter: grayscale(var(--value, 100%));
@@ -280,7 +282,7 @@
     filter: grayscale(var(--value, 100%));
   }
 
-  /* speakers*/
+  /* speakers */
 
   .name {
     font-size: 1.6rem;
@@ -307,7 +309,7 @@
     flex-direction: column;
     justify-content: center;
     width: 60%;
-    padding: 1.0rem;
+    padding: 1rem;
   }
 
   #div1 {
@@ -316,6 +318,7 @@
     margin: 0 0 12px;
     background-color: #d3d3d3;
   }
+
   .occupation {
     color: #ec5242;
     font-style: italic;

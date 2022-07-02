@@ -240,7 +240,7 @@
     width: 100vw;
     margin: auto;
     gap: 1.3rem;
-    padding: 5rem  0 1.5rem;
+    padding: 5rem  0 5rem;
     border-top: 2px solid rgba(211, 211, 211, 0.3);
   }
 
@@ -252,6 +252,7 @@
     align-items: center;
     width: 55rem;
     margin: auto;
+    text-align: center;
   }
 
   #lg {
