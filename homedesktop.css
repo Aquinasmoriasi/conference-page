@@ -123,7 +123,7 @@
     z-index: 1;
     background-image: url(./images/bg3.png);
     background-size: contain;
-    top: 48.5%;
+    top: 57%;
     left: 50%;
     background-repeat: no-repeat;
   }
@@ -137,17 +137,23 @@
     background-repeat: repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding: 0 21.5vw 0 0;
     letter-spacing: 0.4rem;
     z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-right: 27rem;
+    padding-top: 15rem;
   }
 
   #intro {
-    color: #ec5242;
+    font-family: 'Lato', sans-serif;
+    -webkit-text-fill-color: #ec5242;
     background-image: none;
-    padding: 5vh 39.7vw 0 0;
     letter-spacing: 0.4rem;
     z-index: 5;
+    font-size: 2.5rem;
     margin-bottom: 0;
     font-weight: 600;
   }
