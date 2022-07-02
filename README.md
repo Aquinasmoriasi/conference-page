@@ -17,10 +17,9 @@
 - Technologies
   - Linters
 
-## Demo Links
+## Demo Link
 
-- [Live Demo Link]([https://aquinasmoriasi.github.io/First-Capstone-Project/](https://drive.google.com/file/d/1IYAXnYJ6rdBYw5BQzioRgXQ8uvp8CC6T/view?usp=sharing))
-- This [link](https://aquinasmoriasi.github.io/First-Capstone-Project/) opens the live version of this project.
+- [Live Demo Link](https://aquinasmoriasi.github.io/First-Capstone-Project/)
 
 
 ## Getting Started
