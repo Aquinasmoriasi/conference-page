@@ -104,7 +104,7 @@
     align-items: center;
     background-image: url(./images/bgbg.png);
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     min-height: 100vh;
     z-index: 5;
   }
@@ -116,8 +116,8 @@
     z-index: 1;
     background-image: url(./images/bg3.png);
     background-size: contain;
-    top: 57%;
-    left: 51%;
+    top: 48.5%;
+    left: 50%;
     background-repeat: no-repeat;
   }
 
@@ -150,7 +150,7 @@
     margin-right: 27vw;
     width: 39%;
     background-color: rgb(246, 246, 246);
-    border: 3px solid rgba(255, 255, 255, 1);
+    border: 3px solid rgba(255,255,255, 0.4);
     padding: 0.8rem;
     z-index: 5;
   }

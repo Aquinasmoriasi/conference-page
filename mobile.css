@@ -38,18 +38,21 @@
     gap: 3.6rem;
     height: 100vh;
     margin: 0;
-    background-image: url(./images/dry-mb.webp);
-    background-size: cover;
+    background-image: url(./images/bg.png);
+    background-size: contain;
     background-color: #d3d3d3;
+    z-index: 1;
   }
 
-  .bg {
+  #bg {
     position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0.97;
-    height: 100vh;
-    width: 100vw;
+    width: 10rem;
+    height: 10rem;
+    left: 67%;
+    top: 30%;
+    background-image: url(./images/bg3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     background-color: #d3d3d3;
   }
 
@@ -97,7 +100,6 @@
     margin: 0.2rem;
     width: 3.5rem;
     height: 0.5rem;
-    border-radius: 1rem;
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
   }
@@ -130,19 +132,24 @@
     flex-direction: column;
     font-family: 'COCOGOOSE', sans-serif;
     z-index: 1;
+    background-image: url(./images/theme.png);
+    background-size: contain;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .summit-description {
     font-size: 1.6rem;
     margin: 0.1rem;
-    background-color: #d3d3d3;
-    border: 2px ridge #fff;
+    background-color: rgb(249, 249, 249);
+    border: 3px solid rgba(255,255,255, 1);
     padding: 1.5rem;
     z-index: 1;
   }
 
   .date-details {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-family: "COCOGOOSE", sans-serif;
     color: #272a31;
     margin: 0.9rem;
