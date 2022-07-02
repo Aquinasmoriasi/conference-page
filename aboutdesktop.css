@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
+
+@media screen and (min-width: 768px) {
+  html {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+  }
+
+  main {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .hamburger,
+  .menu,
+  .subscribe-btn {
+    display: none;
+  }
+
+  .footer-info small {
+    font-size: 1.6rem;
+    margin-top: 1.4rem;
+  }
+
+  .footer-info img {
+    width: 17rem;
+    height: 15rem;
+  }
+
+  .footer-info a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .top-nav {
+    width: 100vw;
+  }
+
+  .nav-before {
+    position: fixed;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+    background-color: #272a31;
+    height: 5vh;
+    z-index: 10;
+    width: 100vw;
+    padding-left: 30rem;
+  }
+
+  .nav-before li:nth-of-type(1) {
+    padding-left: 44.5rem;
+  }
+
+  .nav-before a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  .desktop-menu {
+    background-color: #fff;
+  }
+
+  .desktop-menu-links {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 12.6rem;
+    left: 0;
+    background-color: rgba(255, 255, 255, 1);
+    width: 100vw;
+    position: fixed;
+    top: 5vh;
+    z-index: 10;
+  }
+
+  .desktop-menu-links a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #272a31;
+  }
+
+  .desktop-menu-links a:hover {
+    color: #ec5242;
+    font-size: 1.52rem;
+  }
+
+  #camp {
+    border: 3px solid #ec5242;
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  #camp a {
+    color: #ec5242;
+  }
+
+  #nav-logo {
+    width: 7rem;
+    height: 7rem;
+    margin-right: 19rem;
+  }
+
+  .home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/bgbg.png);
+    background-size: contain;
+    background-position: 0 30%;
+    background-repeat: repeat-x;
+    height: auto;
+    padding: 15rem 0 5rem;
+    gap: 1.5rem;
+  }
+
+  #intro {
+    display: none;
+  }
+
+  #bg {
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    z-index: 1;
+    background-image: url(./images/bg3.png);
+    background-size: contain;
+    top: 50%;
+    left: 8%;
+    background-repeat: no-repeat;
+  }
+
+  .headline {
+    color: #ec5242;
+    font-size: 4rem;
+    font-family: 'COCOGOOSE', sans-serif;
+    z-index: 5;
+    text-align: center;
+    padding-top: 5rem;
+  }
+
+  .summit-description {
+    font-size: 1.6rem;
+    width: 70%;
+    border: 2px solid rgba(211, 211, 211, 0.3);
+    background-color: #f8f8f8;
+    padding: 2rem;
+    z-index: 5;
+    text-align: center;
+  }
+
+  .divider {
+    background-color: #ec5242;
+    width: 3%;
+    margin-bottom: auto;
+    height: 0.2rem;
+  }
+
+  .footer-info {
+    height: auto;
+    background-color: #272a31;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 4rem;
+    filter: grayscale(var(--value, 100%));
+    color: #fff;
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    z-index: 5;
+  }
+
+  .contact-details span {
+    color: #272a31;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .abt-header {
+    font-size: 2.5rem;
+  }
+
+  .past-events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 5rem 0 8rem;
+    border-top: 2px solid rgba(211, 211, 211, 0.3);
+  }
+
+  .past-events p {
+    font-size: 1.8rem;
+  }
+
+  .event {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem;
+  }
+
+  .event img {
+    width: 40rem;
+    height: 28rem;
+  }
+
+  .logo-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    margin: auto;
+    gap: 1.3rem;
+    padding: 5rem  0 5rem;
+    border-top: 2px solid rgba(211, 211, 211, 0.3);
+  }
+
+  .logo-section p {
+    display: flex;
+    font-size: 1.6rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55rem;
+    margin: auto;
+    text-align: center;
+  }
+
+  #lg {
+    width: auto;
+    height: 18rem;
+    border: 2px solid rgba(211, 211, 211, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #lg img {
+    width: 20rem;
+    height: 20rem;
+  }
+}
