@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
+
+@media screen and (max-width: 768px) {
+  html {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .desktop-menu,
+  .top-nav,
+  #dt-btn {
+    display: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
+    color: #272a31;
+    overflow-x: hidden;
+  }
+
+  main {
+    width: 100vw;
+  }
+
+  .home-page {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./images/bgm.png);
+    background-repeat: repeat-x;
+    background-size: cover;
+    margin: 0;
+    padding: 0 2.4rem;
+  }
+
+  .menu {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background-color: rgba(211, 211, 211, 0.99);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 7rem;
+  }
+
+  .menu a {
+    width: 100%;
+    text-decoration: none;
+    color: rgba(236, 82, 66, 1);
+    font-size: 4rem;
+  }
+
+  .hamburger {
+    z-index: 11;
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .ham {
+    background-color: rgb(106, 101, 101);
+    margin: 0.2rem;
+    width: 3.5rem;
+    height: 0.5rem;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .hamburger.active .ham:nth-child(1) {
+    background-color: rgba(236, 82, 66, 1);
+    position: fixed;
+    transform: translateY(1rem) rotate(45deg);
+  }
+
+  .hamburger.active .ham:nth-child(2) {
+    visibility: hidden;
+  }
+
+  .hamburger.active .ham:nth-child(3) {
+    background-color: rgba(236, 82, 66, 1);
+    position: fixed;
+    transform: translateY(1rem) rotate(-45deg);
+  }
+
+  .navigation {
+    margin: 0;
+  }
+
+  .headline {
+    color: #ec5242;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'COCOGOOSE', sans-serif;
+    z-index: 1;
+  }
+
+  #intro {
+    color: #ec5242;
+    font-size: 3rem;
+    margin-top: 13rem;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'COCOGOOSE', sans-serif;
+    z-index: 1;
+  }
+
+  .summit-description {
+    font-size: 1.6rem;
+    width: 100%;
+    border: 2px solid rgba(211, 211, 211, 0.2);
+    background-color: #f8f8f8;
+    padding: 2rem;
+    z-index: 5;
+    text-align: center;
+  }
+
+  .divider {
+    background-color: #ec5242;
+    width: 10%;
+    margin: auto;
+    height: 0.2rem;
+  }
+
+  #div-1 {
+    display: none;
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    z-index: 5;
+    text-align: center;
+  }
+
+  .contact-details span {
+    color: #272a31;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .abt-header {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem;
+  }
+
+  .event img {
+    width: 90vw;
+    height: auto;
+    margin: 0 2.4rem;
+  }
+
+  .past-events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-top: 2px solid rgba(211, 211, 211, 0.2);
+    padding: 1.5rem 0;
+  }
+
+  .past-events p {
+    font-size: 1.3rem;
+  }
+
+  .logo-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 2.4rem 2.4rem;
+    height: 40rem;
+    margin: auto;
+    border-top: 2px solid rgba(211, 211, 211, 0.2);
+  }
+
+  .logo {
+    height: 9rem;
+    width: 9rem;
+    padding: 0;
+  }
+
+  .logo-section img {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  #lg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(211, 211, 211, 0.2);
+  }
+
+  .logo-section p {
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+
+  .footer-info {
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    filter: grayscale(var(--value, 100%));
+  }
+}

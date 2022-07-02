@@ -31,6 +31,21 @@
     display: none;
   }
 
+  .footer-info small {
+    font-size: 1.6rem;
+    margin-top: 1.4rem;
+  }
+
+  .footer-info img {
+    width: 17rem;
+    height: 15rem;
+  }
+
+  .footer-info a {
+    text-decoration: none;
+    color: #fff;
+  }
+
   .top-nav {
     width: 100vw;
   }
@@ -117,7 +132,11 @@
     padding: 15rem 0 5rem;
     gap: 1.5rem;
   }
-  
+
+  #intro {
+    display: none;
+  }
+
   #bg {
     width: 15rem;
     height: 15rem;
@@ -125,10 +144,9 @@
     z-index: 1;
     background-image: url(./images/bg3.png);
     background-size: contain;
-    top: 42%;
+    top: 50%;
     left: 8%;
     background-repeat: no-repeat;
-
   }
 
   .headline {
@@ -137,6 +155,7 @@
     font-family: 'COCOGOOSE', sans-serif;
     z-index: 5;
     text-align: center;
+    padding-top: 5rem;
   }
 
   .summit-description {
@@ -146,7 +165,7 @@
     background-color: #f8f8f8;
     padding: 2rem;
     z-index: 5;
-
+    text-align: center;
   }
 
   .divider {
@@ -166,6 +185,7 @@
     filter: grayscale(var(--value, 100%));
     color: #fff;
   }
+
   .contact-details {
     display: flex;
     flex-direction: column;
@@ -176,16 +196,16 @@
   }
 
   .contact-details span {
-   color: #272a31;
-   font-weight: bold;
-   text-decoration: underline;
-
+    color: #272a31;
+    font-weight: bold;
+    text-decoration: underline;
   }
 
   .abt-header {
     font-size: 2.5rem;
   }
- .past-events {
+
+  .past-events {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,24 +213,25 @@
     gap: 1rem;
     padding: 5rem 0 8rem;
     border-top: 2px solid rgba(211, 211, 211, 0.3);
- }
+  }
 
- .past-events p {
-    font-size: 1.8rem;;
- }
+  .past-events p {
+    font-size: 1.8rem;
+  }
 
- .event {
+  .event {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4rem;
     padding: 2rem;
- }
+  }
 
- .event img {
+  .event img {
     width: 40rem;
     height: 28rem;
- }
+  }
+
   .logo-section {
     display: flex;
     flex-direction: column;
@@ -231,23 +252,19 @@
     align-items: center;
     width: 55rem;
     margin: auto;
-
   }
 
-  .logo-section img {
+  #lg {
+    width: 45rem;
+    height: 18rem;
     border: 2px solid rgba(211, 211, 211, 0.2);
-    padding: 2rem 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
- .footer-info a {
-    text-decoration: none;
-    color: #fff; 
- }
-  .footer-info small {
-    font-size: 1.6rem;
-    margin-top: 1.4rem;
-  } 
-  .footer-info img {
-    width: 17rem;
+
+  #lg img {
+    width: 15rem;
     height: 15rem;
   }
 }
