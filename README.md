@@ -1,8 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Capstone project
-
-
 > This is a project for a climate change summit website. It contains details about the conference such as the speakers, the date, venue and the main speakers.
 
 
