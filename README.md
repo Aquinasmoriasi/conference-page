@@ -17,7 +17,7 @@
 
 ## Live Demo Link
 
-- [Live Demo Link](https://aquinasmoriasi.github.io/First-Capstone-Project/)
+- [Live Demo Link](https://aquinasmoriasi.github.io/conference-page/)
 
 ## Video Description 
 The video description of the  project can be accessed using [this link](https://drive.google.com/file/d/1IYAXnYJ6rdBYw5BQzioRgXQ8uvp8CC6T/view?usp=sharing)
