@@ -131,8 +131,9 @@
   .headline {
     color: #ec5242;
     font-size: 5.5rem;
+    background-clip: border-box;
     font-family: 'COCOGOOSE', sans-serif;
-    background-image: url(./images/theme.png);
+    background-image: url(./images/theme1.png);
     background-size: contain;
     background-repeat: repeat;
     -webkit-background-clip: text;
