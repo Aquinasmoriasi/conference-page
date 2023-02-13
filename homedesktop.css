@@ -131,8 +131,9 @@
   .headline {
     color: #ec5242;
     font-size: 5.5rem;
+    background-clip: border-box;
     font-family: 'COCOGOOSE', sans-serif;
-    background-image: url(./images/theme.png);
+    background-image: url(./images/theme1.png);
     background-size: contain;
     background-repeat: repeat;
     -webkit-background-clip: text;
@@ -324,38 +325,22 @@
 
   /* speakers */
 
-  .name {
-    font-size: 1.6rem;
+  .name,
+  #about-header1 {
+    font-size: 1.4rem;
     font-weight: bold;
     padding-top: 0.9rem;
   }
 
   #speakers {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: #fff;
-    margin: auto;
-    height: auto;
-    padding: 5rem;
-  }
-
-  #speaker-container {
     display: grid;
-    grid-template-columns: 0.9fr 2fr 0.9fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
     width: 80%;
     padding: 3rem;
     height: auto;
-  }
-
-  .speaker-div {
-    display: grid;
-    grid-template-columns: 0.6fr 1.3fr 0.6fr 1.3fr;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 0 4rem;
+    background-color: #fff;
+    margin: auto;
   }
 
   #speakers img {
@@ -365,24 +350,11 @@
 
   .speaker-details {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    font-size: 1.3rem;
+    gap: 0.8rem;
   }
 
-  #divider3 {
-    width: 3%;
-    background-color: #ec5242;
-    margin-bottom: auto;
-    height: 0.2rem;
-  }
-
-  #div1 {
-    width: 2rem;
-    height: 0.2rem;
-    margin: 0 0 12px;
-    background-color: #d3d3d3;
+  .separator {
+    width: 3rem;
   }
 
   .occupation {
@@ -393,14 +365,21 @@
 
   #about-header1 {
     color: #272a31;
+    text-align: center;
+    margin: 2rem;
+    font-size: 2rem;
   }
 
-  #div2 {
+  #about-header1 hr {
     width: 3%;
-    height: 0.2rem;
-    background-color: #ec5242;
+    height: 0.15rem;
+    color: #ec5242;
     position: absolute;
-    left: 47.2%;
+    left: 49%;
+  }
+
+  .description {
+    font-size: 1.3rem;
   }
 
   #speaker-title {

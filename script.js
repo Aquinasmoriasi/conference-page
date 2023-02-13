@@ -6,11 +6,9 @@ const menuItem = document.querySelectorAll('.menu-items a');
 ham.addEventListener('click', () => {
   if (ham.classList.contains('active')) {
     ham.classList.remove('active');
-    menu.style.transition = 'all 0.1s ease-out';
     menu.style.left = '-100%';
   } else {
     ham.classList.add('active');
-    menu.style.transition = 'all 0.3s ease-in';
     menu.style.left = '0';
   }
 });
