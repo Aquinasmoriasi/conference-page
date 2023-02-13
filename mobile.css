@@ -67,6 +67,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 7rem;
+    transition: all 0.3s ease-in-out;
   }
 
   .menu a {
